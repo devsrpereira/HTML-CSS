@@ -70,6 +70,7 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
+    
 }
 
 section.branco{
@@ -84,6 +85,24 @@ section.transparente>p{
     display: inline-block;
     color: white;
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}   
+
+#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.447);
+    background-attachment: fixed;
+}
+
+
+#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.447);
+    background-attachment: fixed
 }
 
 /*Comandos para o Rodapé*/
