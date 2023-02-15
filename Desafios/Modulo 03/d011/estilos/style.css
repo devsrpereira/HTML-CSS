@@ -79,14 +79,11 @@ section.branco{
     line-height: 2em;
 }
 
-section.transparente{
-    background-color: #ee14d462;
-    color: white;
-    width: max-content;
-}
-
 section.transparente>p{
     background-color: rgba(0, 0, 0, 0.418);
+    display: inline-block;
+    color: white;
+    padding: 5px;
 }
 
 /*Comandos para o Rodapé*/
