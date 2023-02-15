@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    table{
+        font-family: Arial, Helvetica, sans-serif;
+        width: 600px;
+    }
+
+    th, tfoot{
+        border: 1px solid black;
+        background-color: brown;
+        padding: 8px;
+        color: white;
+        font-weight: bold;
+    }
+
+    td{
+        border: 1px solid black;
+        text-align: center;
+        padding: 8px;  
+    }   
+    
+    caption{
+        font-size: 1.3em;
+        font-weight: border;
+        background-color: lightgray;
+        padding: 5px;
+    }
+
+</style>
+
+<body>
+
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <caption>
+            Crescimento Demografico dos 5 maiores estados brasileiros.
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População 2010</th>
+                <th scope="col">População 2022</th>
+                <th scope="col">Evolução</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr> 
+                <td>São Paulo</td>
+                <td>41 262 199</td>
+                <td>46 024 937</td>
+                <td>+11.5%</td>
+            </tr>
+            
+            <tr>
+                <td>Minas Gerais
+                <td>19 597 330
+                <td>20 732 660
+                <td>+5.8%
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro
+                <td>15 989 929
+                <td>16 615 526
+                <td>+3.9%
+            </tr>
+
+            <tr>
+                <td>Bahia
+                <td>14 016 906
+                <td>14 659 023
+                <td>+4.6%
+            </tr>
+
+            <tr>
+                <td>Paraná
+                <td>10 444 526
+                <td>11 835 379
+                <td>+13.3%
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <th scope="row">TOTAL GERAL
+            <td>101 310 890
+            <td>109 867 525
+            <td>+8.4%
+        </tfoot>
+
+
+    </table>
+
+    
+</body>
+</html>
