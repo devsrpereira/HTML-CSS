@@ -10,6 +10,7 @@
     table{
         font-family: Arial, Helvetica, sans-serif;
         width: 600px;
+        position: relative;
     }
 
     th, tfoot{
@@ -20,6 +21,11 @@
         font-weight: bold;
     }
 
+    thead>tr>th{
+        position: sticky;
+        top: -1px;
+        background-color: brown;
+    }
     td{
         border: 1px solid black;
         text-align: center;
@@ -29,9 +35,18 @@
     caption{
         font-size: 1.3em;
         font-weight: border;
-        background-color: lightgray;
+        background-color:white;
         padding: 5px;
     }
+
+    /*comando para zebrar uma tabela*/
+    tbody>tr:nth-child(even){
+        background-color: lightgray;
+
+        /*linha par = odd ou 2n-1
+        linha impar = eve ou 2n*/
+    }
+      
 
 </style>
 
@@ -109,6 +124,13 @@
 
     </table>
 
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae soluta tempora rem vitae ad. Porro, ullam delectus minima quae consequuntur enim iusto rerum quod dicta odio totam nostrum officiis quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officiis deserunt velit vero, error quam! Iure enim repudiandae explicabo quam fugiat nemo nostrum non aspernatur nisi minima! Non, quam ipsa? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quis cupiditate eveniet quaerat eum voluptate sint optio sapiente numquam repellendus, saepe eos, quod tempora? Voluptatum tempore inventore quibusdam cum necessitatibus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae soluta tempora rem vitae ad. Porro, ullam delectus minima quae consequuntur enim iusto rerum quod dicta odio totam nostrum officiis quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officiis deserunt velit vero, error quam! Iure enim repudiandae explicabo quam fugiat nemo nostrum non aspernatur nisi minima! Non, quam ipsa? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quis cupiditate eveniet quaerat eum voluptate sint optio sapiente numquam repellendus, saepe eos, quod tempora? Voluptatum tempore inventore quibusdam cum necessitatibus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae soluta tempora rem vitae ad. Porro, ullam delectus minima quae consequuntur enim iusto rerum quod dicta odio totam nostrum officiis quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officiis deserunt velit vero, error quam! Iure enim repudiandae explicabo quam fugiat nemo nostrum non aspernatur nisi minima! Non, quam ipsa? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quis cupiditate eveniet quaerat eum voluptate sint optio sapiente numquam repellendus, saepe eos, quod tempora? Voluptatum tempore inventore quibusdam cum necessitatibus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae soluta tempora rem vitae ad. Porro, ullam delectus minima quae consequuntur enim iusto rerum quod dicta odio totam nostrum officiis quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officiis deserunt velit vero, error quam! Iure enim repudiandae explicabo quam fugiat nemo nostrum non aspernatur nisi minima! Non, quam ipsa? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quis cupiditate eveniet quaerat eum voluptate sint optio sapiente numquam repellendus, saepe eos, quod tempora? Voluptatum tempore inventore quibusdam cum necessitatibus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae soluta tempora rem vitae ad. Porro, ullam delectus minima quae consequuntur enim iusto rerum quod dicta odio totam nostrum officiis quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officiis deserunt velit vero, error quam! Iure enim repudiandae explicabo quam fugiat nemo nostrum non aspernatur nisi minima! Non, quam ipsa? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quis cupiditate eveniet quaerat eum voluptate sint optio sapiente numquam repellendus, saepe eos, quod tempora? Voluptatum tempore inventore quibusdam cum necessitatibus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae soluta tempora rem vitae ad. Porro, ullam delectus minima quae consequuntur enim iusto rerum quod dicta odio totam nostrum officiis quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officiis deserunt velit vero, error quam! Iure enim repudiandae explicabo quam fugiat nemo nostrum non aspernatur nisi minima! Non, quam ipsa? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quis cupiditate eveniet quaerat eum voluptate sint optio sapiente numquam repellendus, saepe eos, quod tempora? Voluptatum tempore inventore quibusdam cum necessitatibus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae soluta tempora rem vitae ad. Porro, ullam delectus minima quae consequuntur enim iusto rerum quod dicta odio totam nostrum officiis quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officiis deserunt velit vero, error quam! Iure enim repudiandae explicabo quam fugiat nemo nostrum non aspernatur nisi minima! Non, quam ipsa? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quis cupiditate eveniet quaerat eum voluptate sint optio sapiente numquam repellendus, saepe eos, quod tempora? Voluptatum tempore inventore quibusdam cum necessitatibus?</p>
     
 </body>
 </html>
