@@ -62,20 +62,31 @@ header p{
 }
 
 /*Comandos para o Corpo*/
-main pre{
+
+section{
+    padding-left: 30px;
     font-family: var(--font03);
     font-size: 3.5vw;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     line-height: 2em;
 }
 
-pre.branco{
+section.branco{
     background-color: white;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
 }
 
-pre.transparente{
-    background-color: rgba(0, 0, 0, 0.416);
+section.transparente{
+    background-color: #ee14d462;
+    color: white;
+    width: max-content;
+}
+
+section.transparente>p{
+    background-color: rgba(0, 0, 0, 0.418);
 }
 
 /*Comandos para o Rodapé*/
