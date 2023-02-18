@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        *{font-family: Arial, Helvetica, sans-serif;}
+        legend{font-weight: bold; color: brown;}
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        
+        <label for="icomida">Comida Preferida:</label>
+        <select name="comida" id="icomida">
+            <option value="">--Escolha--</option>
+            <option value="01">Macarronada</option>
+            <option value="02">Hamburguer</option>
+            <option value="03">Arroz e Feijão</option>
+            <option value="04">Lasagna</option>
+            <option value="05">Risotto</option>
+            <option value="06">Pizza</option>
+        </select>
+
+        <p>
+            <label for="ijob">Profissões: </label>
+            <input type="text" name="job" id="ijob" list="ltjob">
+            <datalist id="ltjob">
+                <option>ADM</option>
+                <option>CONT</option>
+                <option>PROF</option>
+                <option>MOT</option>
+            </datalist>
+        </p>
+        
+        <label for="imsg">Deixe a sua Mensagem:</label><br>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>P
