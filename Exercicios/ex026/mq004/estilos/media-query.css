@@ -1,0 +1,72 @@
+@charset "URF-8";
+
+/*tablet*/
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    body{
+        background: black url(../imagens/back-tablet.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: block;
+    }
+    
+}
+
+/*PC*/
+@media screen and (min-width:992px) and (max-width:1200px)  {
+   
+    body{
+        background: black url(../imagens/back-pc.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    img#phone{
+        display: none;
+    }
+
+    img#pc{
+        display: block;
+    }
+}    
+
+/*TV*/
+@media screen and (min-width:1201px)  {
+   
+    body{
+        background: black url(../imagens/back-tv.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    img#phone{
+        display: none;
+    }
+
+    img#tv{
+        display: block;
+    }
+        
+}
+
+@media print {
+   
+    body{
+        background: black url(../imagens/back-print.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    img#phone{
+        display: none;
+    }
+             
+    img#print{
+        display: block;
+    }
+}

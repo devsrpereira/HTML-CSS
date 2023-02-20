@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+
+    <style>
+
+        @media screen and (min-width:650px){
+            menu#menu02{
+                display:block;
+            }
+            div{
+                display: none;
+            }
+            menu#menu02 li{
+                display: inline-block;
+                padding: 10px;
+                text-align: center;
+                border: 0px solid black;
+                font-weight: normal;
+            }
+        }   
+
+    </style>
+
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+
+        <div>
+            <img src="imagem/menu_icon.png" onclick="clickMenu()" alt="icone menu">
+        </div>
+
+        <menu id="menu02" >
+                <ul>
+                    <li><a href="#">Opção 1</a></li>
+                    <li><a href="#">Opção 2</a></li>
+                    <li><a href="#">Opção 3</a></li>
+                    <li><a href="#">Opção 4</a></li>
+                    <li><a href="#">Opção 5</a></li>
+                </ul>
+        </menu>
+    </header>
+    
+    <main>
+        <h2>Testando Media Queries</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde odio repellat, libero sequi soluta vitae laboriosam, numquam quisquam nulla rem nostrum. Quia totam quaerat dolorum magni, ipsa cumque sequi odit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis enim assumenda fuga provident necessitatibus hic, earum fugiat distinctio accusantium tenetur adipisci corporis repellat dolores inventore deleniti similique. Corrupti, tempora blanditiis!</p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, aliquam ducimus quia, cumque quas ea harum earum incidunt, adipisci officia commodi unde quam! Odit nesciunt iure corrupti, atque omnis dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi qui itaque dolore, adipisci aut nesciunt quibusdam fuga impedit mollitia exercitationem repudiandae sed ad? Aut nostrum consectetur modi culpa accusamus id.</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat rem, facilis cum quia autem delectus dolorum repellat esse aperiam. Sunt similique ipsum, eaque mollitia necessitatibus dicta ab! Assumenda, voluptatibus rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, asperiores laudantium eius dolores vel enim officia magni veniam suscipit perferendis voluptas, laborum dolorum modi minus id rem a natus aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas temporibus at ab fuga, nemo quod ea totam sed ullam? Mollitia amet ipsa sint nam adipisci illum minus ipsam unde illo.</p>
+    </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth<= 650){
+                menu02.style.display = 'block'
+            } else {
+                menu02.style.display = 'none'
+            }
+        }    
+        function clickMenu(){
+            if (menu02.style.display == 'block'){
+                menu02.style.display = 'none'
+            } else {
+                menu02.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
